@@ -7,14 +7,11 @@ import { Browser } from '@capacitor/browser';
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss']
 })
-export class Tab1Page   {
-
+export class Tab1Page {
   data: Observable<any>
 
   constructor(
-    private githubService: GithubService,
-        
-  ) {    }
+    private githubService: GithubService) { }
 
   ionViewDidEnter() {
     this.githubService.getGoodNews().subscribe((resp: any) => {
@@ -24,8 +21,5 @@ export class Tab1Page   {
 
   openBrowser(link) {    
      Browser.open({url: link})
-    }
-  
-
-  
+  }  
 }
