@@ -1,36 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      ভালো খবর
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">ভালো খবর</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <!-- <app-explore-container name="Good News"></app-explore-container> -->
-
   <ion-list no-lines>
     <a ion-item 
     ion-item
     detail-none
-    *ngFor="let news of data">
-      <h3 >
-        {{ news.name }}
-      </h3>
+    *ngFor="let news of data; index as i"    
+    >
+      <div>
+        <h3 *ngIf="news.name"(click)="openBrowser(news.link)">{{news.name}}</h3>
+      </div>      
     </a>
-
-    <!-- <h4 *ngFor="let x of data">
-      I am header {{x.name}}
-    </h4> -->
-
   </ion-list>
-
-  
-
 </ion-content>

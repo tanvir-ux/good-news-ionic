@@ -1,0 +1,6 @@
+{
+	"appId": "com.mehvozsoft.goodnews",
+	"appName": "Good News",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

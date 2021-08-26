@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'good-news-ionic',
+  appId: 'com.mehvozsoft.goodnews',
+  appName: 'Good News',
   webDir: 'www',
   bundledWebRuntime: false
 };
