@@ -13,5 +13,24 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- <app-explore-container name="Good News"></app-explore-container> -->
+
+  <ion-list no-lines>
+    <a ion-item 
+    ion-item
+    detail-none
+    *ngFor="let news of data">
+      <h3 >
+        {{ news.name }}
+      </h3>
+    </a>
+
+    <!-- <h4 *ngFor="let x of data">
+      I am header {{x.name}}
+    </h4> -->
+
+  </ion-list>
+
+  
+
 </ion-content>
