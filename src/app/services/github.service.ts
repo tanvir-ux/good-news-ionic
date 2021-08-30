@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class GithubService {
 
-  url: any = 'https://raw.githubusercontent.com/tanvir-ux/GoodNews/develop/news.json'
+  url: any = 'https://raw.githubusercontent.com/tanvir-ux/GoodNews/main/news.json'
 
   constructor(
     private http: HttpClient
